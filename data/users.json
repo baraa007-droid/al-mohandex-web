@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Admin",
+    "email": "admin@almohandex.com",
+    "password": "$2a$10$placeholder",
+    "role": "admin"
+  }
+]

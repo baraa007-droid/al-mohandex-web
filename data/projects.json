@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "category": "web",
+    "titleAr": "منصة عقارات ذكية",
+    "titleEn": "Smart Real Estate Platform",
+    "subtitleAr": "تطوير ويب",
+    "subtitleEn": "Web Development",
+    "img": "https://picsum.photos/seed/p1/800/600",
+    "descriptionAr": "منصة متكاملة لإدارة وعرض العقارات مع بحث ذكي وتوصيات مخصصة.",
+    "descriptionEn": "A complete real estate management platform with smart search and personalized recommendations.",
+    "features": [
+      "نظام بحث متقدم مع فلاتر متعددة",
+      "خرائط تفاعلية",
+      "جولات افتراضية 360",
+      "لوحة تحكم للوكلاء العقاريين",
+      "نظام حجوزات مواعيد",
+      "إشعارات فورية"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "Google Maps API", "Tailwind CSS"],
+    "liveDemo": "https://demo.almohandex.com/realestate",
+    "github": ""
+  },
+  {
+    "id": 2,
+    "category": "mobile",
+    "titleAr": "تطبيق توصيل طلبات",
+    "titleEn": "Food Delivery App",
+    "subtitleAr": "تطبيق جوال",
+    "subtitleEn": "Mobile App",
+    "img": "https://picsum.photos/seed/p2/800/600",
+    "descriptionAr": "تطبيق جوال لتوصيل الطعام مع تتبع الطلبات مباشر ودفع إلكتروني.",
+    "descriptionEn": "A food delivery mobile app with real-time order tracking and digital payments.",
+    "features": [
+      "تتبع الطلب في الوقت الفعلي",
+      "دفع إلكتروني آمن",
+      "تقييمات وتعليقات",
+      "عروض وكوبونات خصم",
+      "إشعارات حالة الطلب"
+    ],
+    "technologies": ["Flutter", "Firebase", "Stripe API", "Google Maps"],
+    "liveDemo": "",
+    "github": "https://github.com/almohandex/food-delivery"
+  },
+  {
+    "id": 3,
+    "category": "branding",
+    "titleAr": "هوية شركة ناشئة",
+    "titleEn": "Tech Startup Identity",
+    "subtitleAr": "هوية بصرية",
+    "subtitleEn": "Branding",
+    "img": "https://picsum.photos/seed/p3/800/600",
+    "descriptionAr": "هوية بصرية متكاملة لشركة ناشئة في مجال التقنية تشمل الشعار والألوان والطباعة.",
+    "descriptionEn": "Complete visual identity for a tech startup including logo, colors, and typography.",
+    "features": [
+      "شعار رئيسي وثانوي",
+      "دليل الألوان والخطوط",
+      "بطاقات عمل",
+      "القرطاسية الرسمية",
+      "أيقونات مخصصة"
+    ],
+    "technologies": ["Figma", "Illustrator", "Photoshop"],
+    "liveDemo": "https://dribbble.com/almohandex",
+    "github": ""
+  },
+  {
+    "id": 4,
+    "category": "web",
+    "titleAr": "متجر إلكتروني",
+    "titleEn": "E-Commerce Platform",
+    "subtitleAr": "تطوير ويب",
+    "subtitleEn": "Web Development",
+    "img": "https://picsum.photos/seed/p4/800/600",
+    "descriptionAr": "متجر إلكتروني متكامل مع إدارة المخزون والطلبات وبوابة دفع آمنة.",
+    "descriptionEn": "Full e-commerce platform with inventory management, orders, and secure payment gateway.",
+    "features": [
+      "إدارة المنتجات والمخزون",
+      "سلة مشتريات متقدمة",
+      "بوابات دفع متعددة",
+      "تقارير مبيعات وتحليلات",
+      "إدارة الشحن والتوصيل"
+    ],
+    "technologies": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+    "liveDemo": "https://shop.almohandex.com",
+    "github": ""
+  },
+  {
+    "id": 5,
+    "category": "mobile",
+    "titleAr": "تطبيق إدارة عقارات",
+    "titleEn": "Real Estate App",
+    "subtitleAr": "تطبيق جوال",
+    "subtitleEn": "Mobile App",
+    "img": "https://picsum.photos/seed/p5/800/600",
+    "descriptionAr": "تطبيق جوال لإدارة العقارات والإيجارات مع توثيق العقود إلكترونياً.",
+    "descriptionEn": "A mobile app for property and rental management with digital contract signing.",
+    "features": [
+      "إدارة العقارات والإيجارات",
+      "توثيق عقود إلكتروني",
+      "تقارير إيرادات",
+      "تواصل مع المستأجرين",
+      "تذكير بمواعيد السداد"
+    ],
+    "technologies": ["React Native", "Firebase", "Node.js", "Express"],
+    "liveDemo": "",
+    "github": ""
+  },
+  {
+    "id": 6,
+    "category": "branding",
+    "titleAr": "هوية مقهى",
+    "titleEn": "Coffee Shop Branding",
+    "subtitleAr": "هوية بصرية",
+    "subtitleEn": "Branding",
+    "img": "https://picsum.photos/seed/p6/800/600",
+    "descriptionAr": "هوية بصرية دافئة وعصرية لمقهى مستقل مع تصاميم للتغليف والمواد التسويقية.",
+    "descriptionEn": "A warm and modern visual identity for an independent coffee shop with packaging and marketing materials.",
+    "features": [
+      "شعار وهوية بصرية",
+      "تصاميم الأكواب والتغليف",
+      "قائمة طعام رقمية",
+      "مواد تسويقية",
+      "حضور على وسائل التواصل"
+    ],
+    "technologies": ["Figma", "Illustrator", "After Effects"],
+    "liveDemo": "",
+    "github": ""
+  }
+]

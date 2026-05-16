@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "Noto Kufi Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Noto Kufi Arabic", sans-serif;
+
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #ffffff;
+  --color-brand-accent: #0070f3;
+}
+
+@layer base {
+  body {
+    @apply antialiased font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-accent ring-offset-2 ring-offset-white dark:ring-offset-neutral-950;
+  }
+  button:focus-visible, a:focus-visible {
+    @apply outline-none ring-2 ring-brand-accent ring-offset-2 ring-offset-white dark:ring-offset-neutral-950 rounded-md;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100 dark:bg-neutral-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-300 dark:bg-neutral-700 rounded-full hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-colors;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .glass {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.dark .glass-strong {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Default smooth transition on interactive elements */
+a, button {
+  @apply transition-all duration-200;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+@keyframes cursor-glow {
+  0%, 100% { box-shadow: 0 0 6px 2px rgba(0, 112, 243, 0.3); }
+  50% { box-shadow: 0 0 12px 4px rgba(0, 112, 243, 0.6); }
+}
+
+.animate-float { animation: float 20s ease-in-out infinite; }
+.animate-float-delayed { animation: float 25s ease-in-out 5s infinite; }
+.animate-float-slow { animation: float 30s ease-in-out -10s infinite; }
+.animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+.animate-shimmer { animation: shimmer 3s ease-in-out infinite; background-size: 200% 100%; }
+.animate-blink { animation: blink 1s step-end infinite; }
+.animate-skeleton { animation: skeleton-pulse 1.5s ease-in-out infinite; }
+.animate-cursor-glow { animation: cursor-glow 2s ease-in-out infinite; }
+
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor { display: none !important; }
+}
